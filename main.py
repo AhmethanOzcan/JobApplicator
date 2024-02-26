@@ -44,5 +44,6 @@ def main(pdf_route):
     reference_file.close()
     
 
-
-main('Ozcan_Ahmethan_CV.pdf')
+# cv_name = input("What is your cv file name?")
+cv_name = 'Ozcan_Ahmethan_CV.pdf'
+main(cv_name)
