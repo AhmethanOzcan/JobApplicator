@@ -21,7 +21,7 @@ def collect():
         for j in jobs_list:
             job_str = str(j)
             pos_start = job_str.find("a href=\"https:") + 8
-            if pos_start != 7 and (job_str.lower().find("software developer") != -1 or job_str.lower().find("software engineer") != -1):
+            if pos_start != 7 and (job_str.lower().find("software developer") != -1 or job_str.lower().find("software engineer") != -1 or job_str.lower().find("web developer") != -1):
                 pos_end = job_str.find("\"", pos_start)
                 url_job = job_str[pos_start:pos_end]
                 url_list.append(url_job)

@@ -17,7 +17,6 @@ def create_cover_letter(cov_str):
     line_counter    = 0
     line_max_char   = 82
     line_by_line = cov_str.split("\n")
-    print(line_by_line)
     for line in line_by_line:
         while len(line) > line_max_char:
                 end = line.rfind(" ", 0, line_max_char)
