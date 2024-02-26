@@ -16,7 +16,6 @@ def get_from_url(url):
     email_s_pos         = additional_detail.find("E-mail: ")+8
     email_f_pos         = additional_detail.find(" ",email_s_pos)
     email               = additional_detail[email_s_pos:email_f_pos]
-    
     # Create a dic and return it
     output_model = {
         "firm_name"          : firm_name,
